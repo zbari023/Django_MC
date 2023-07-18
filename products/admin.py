@@ -6,6 +6,7 @@ from .models import Product , Menu
 
 class ProductAdmin(admin.ModelAdmin):
     list_display = ['name','price','menu']
+    list_filter = ['price','name','menu']
 
 
 admin.site.register(Product,ProductAdmin)
